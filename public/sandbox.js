@@ -65,18 +65,25 @@ console.log("EXPLICIT TYPES"); // tutorial 5 - explicit types
 // console.log(username, age, isLoggedIn, matricNo, object, ninjaPro);
 console.log("DYNAMIC TYPES, ANY"); //tutorial 6 - dynamic types, any
 console.log('FUNCTION BASIC'); // tutorial 8 - function basics
-let greet;
-greet = () => {
-    console.log("hello there!");
+// let greet: Function;
+// greet = () => {
+//     console.log("hello there!");
+// }
+// greet();
+// const add = (a:number, b:number, c: number | string = 10) => {
+//     console.log(a + b);
+//     console.log(c);
+// }
+// add(1, 3);
+// const minus = (a:number, b:number) => {
+//     return a + b;
+// }
+// let result = minus(1, 3);
+// console.log(typeof result);
+console.log("ALIASES"); // tutorial 9 - Aliases
+const loginDetails = (uid, item) => {
+    console.log(`${item} has a uid of ${uid}`);
 };
-greet();
-const add = (a, b, c = 10) => {
-    console.log(a + b);
-    console.log(c);
+const greet = (user) => {
+    console.log(`${user.name} says hello`);
 };
-add(1, 3);
-const minus = (a, b) => {
-    return a + b;
-};
-let result = minus(1, 3);
-console.log(typeof result);
