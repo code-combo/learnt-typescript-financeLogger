@@ -47,40 +47,44 @@ console.log('OBJECTS AND ARRAYS') // tutorial 4 - objects and arrays
 
 console.log("EXPLICIT TYPES") // tutorial 5 - explicit types
 
-// explicit types
-let username : string;
-let age: number;
-let isLoggedIn: boolean;
+// // explicit types
+// let username : string;
+// let age: number;
+// let isLoggedIn: boolean;
 
-username = "code_combo";
-age = 20;
-isLoggedIn = false;
+// username = "code_combo";
+// age = 20;
+// isLoggedIn = false;
 
-// arrays
-let ninjas: (string|object|number|boolean)[] = [];
-ninjas = ["Alaye", {townHall: "bala blue"}, 4];
+// // arrays
+// let ninjas: (string|object|number|boolean)[] = [];
+// ninjas = ["Alaye", {townHall: "bala blue"}, 4];
 
-let matricNo: string;
-matricNo = "ift/" + 20 + "/" + 5031; 
+// let matricNo: string;
+// matricNo = "ift/" + 20 + "/" + 5031; 
 
-let object: {};
-object = {
-    username: "Lizzy Baby",
-    thick: true,
-    age: 19,
-    isGraduate: true
-}
+// let object: {};
+// object = {
+//     username: "Lizzy Baby",
+//     thick: true,
+//     age: 19,
+//     isGraduate: true
+// }
 
-let ninjaPro: {
-    name: string,
-    belt: string,
-    age: string | number
-}
+// let ninjaPro: {
+//     name: string,
+//     belt: string,
+//     age: string | number
+// }
 
-ninjaPro = {
-    name: "Tinubu",
-    belt: "colourless",
-    age: "unknown!"
-}
+// ninjaPro = {
+//     name: "Tinubu",
+//     belt: "colourless",
+//     age: "unknown!"
+// }
 
-console.log(username, age, isLoggedIn, matricNo, object, ninjaPro);
+// console.log(username, age, isLoggedIn, matricNo, object, ninjaPro);
+
+console.log("DYNAMIC TYPES, ANY") //tutorial 6 - dynamic types, any
+
+console.log('testing!');
