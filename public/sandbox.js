@@ -81,9 +81,28 @@ console.log('FUNCTION BASIC'); // tutorial 8 - function basics
 // let result = minus(1, 3);
 // console.log(typeof result);
 console.log("ALIASES"); // tutorial 9 - Aliases
-const loginDetails = (uid, item) => {
-    console.log(`${item} has a uid of ${uid}`);
+// type stringOrNum = string | number;
+// type objWithName = { name: string, uid: stringOrNum}
+// const loginDetails = (uid: stringOrNum, item: string) => {
+//     console.log(`${item} has a uid of ${uid}`);
+// }
+// const greet = (user: objWithName) => {
+//     console.log(`${user.name} says hello`);
+// }
+console.log("FUNCTION SIGNATURES"); // TUTORIAL 10 - fUNCTION SIGNATURES
+let greet;
+greet = (name, greeting) => {
+    console.log(`${name} says ${greeting}`);
 };
-const greet = (user) => {
-    console.log(`${user.name} says hello`);
+let calc;
+calc = (numOne, numTwo, action) => {
+    if (action === "add") {
+        return numOne + numTwo;
+    }
+    else {
+        return numOne - numTwo;
+    }
+};
+let loginDetails = (ninja) => {
+    console.log(`${ninja.name} is ${ninja.age} years old!`);
 };
