@@ -11,24 +11,50 @@
 //     return diameter * Math.PI;
 // }
 // console.log(calc(3));
-console.log('OBJECTS AND ARRAYS');
-// tutorial 4 - objects and arrays
-var family = ['seyi', 'pelumi', 'toluwanimi', 'simi'];
-// family.push(21);
-family[4] = "anjola";
-var mixed = ["ken", 4, true, "simi"];
-mixed[1] = "5";
-console.log(mixed);
-var individual = {
-    name: "Toluwanimi",
-    techie: false,
-    age: 25,
-    chicks: ['']
+console.log('OBJECTS AND ARRAYS'); // tutorial 4 - objects and arrays
+// let family = ['seyi', 'pelumi', 'toluwanimi', 'simi'];
+// // family.push(21);
+// family[4] = "anjola";
+// const mixed = ["ken", 4, true, "simi"]
+// mixed[1] = "5";
+// console.log(mixed);
+// let individual = {
+//     name: "Toluwanimi",
+//     techie: false,
+//     age: 25,
+//     chicks: ['']
+// }
+// individual = {
+//     techie: true,
+//     name: 'praise',
+//     age: 20,
+//     chicks: []
+// }
+// console.log(individual);
+console.log("EXPLICIT TYPES"); // tutorial 5 - explicit types
+// explicit types
+var username;
+var age;
+var isLoggedIn;
+username = "code_combo";
+age = 20;
+isLoggedIn = false;
+// arrays
+var ninjas = [];
+ninjas = ["Alaye", { townHall: "bala blue" }, 4];
+var matricNo;
+matricNo = "ift/" + 20 + "/" + 5031;
+var object;
+object = {
+    username: "Lizzy Baby",
+    thick: true,
+    age: 19,
+    isGraduate: true
 };
-individual = {
-    techie: true,
-    name: 'praise',
-    age: 20,
-    chicks: []
+var ninjaPro;
+ninjaPro = {
+    name: "Tinubu",
+    belt: "colourless",
+    age: "unknown!"
 };
-console.log(individual);
+console.log(username, age, isLoggedIn, matricNo, object, ninjaPro);
