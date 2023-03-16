@@ -1,7 +1,7 @@
 class Invoice {
-    client: string;
-    details: string;
-    amount: number;
+    readonly client: string;
+    private details: string;
+    public amount: number;
 
     constructor(c: string, d: string, a: number) {
         this.client = c;
@@ -10,7 +10,7 @@ class Invoice {
     }
 
     format (){
-        return `${this.client} owes $${amount} for this ${this.details}`;
+        return `${this.client} owes $${this.amount} for this ${this.details}`;
     }
 }
 
@@ -19,8 +19,11 @@ const invTwo = new Invoice('Sonwoolu', "Sweep the redemption camp", 1);
 
 let invoices: Invoice[] = [];
 invoices.push(invOne)
-invoices.push(invOne)
-console.log(invoices);
+invoices.push(invTwo)
+
+invoices.forEach(inv => {
+    console.log(inv.client, inv.amount, inv.format())
+})
 
 const form = document.querySelector('.new-item-form') as HTMLFormElement;
 
