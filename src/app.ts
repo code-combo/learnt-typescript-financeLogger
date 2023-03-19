@@ -1,21 +1,7 @@
-class Invoice {
-    readonly client: string;
-    private details: string;
-    public amount: number;
+import { Invoice } from "./classes/Invoice.js"
 
-    constructor(c: string, d: string, a: number) {
-        this.client = c;
-        this.details = d;
-        this.amount = a;
-    }
-
-    format (){
-        return `${this.client} owes $${this.amount} for this ${this.details}`;
-    }
-}
-
-const invOne = new Invoice('Tinubu', "loot nigeria", 1000000);
-const invTwo = new Invoice('Sonwoolu', "Sweep the redemption camp", 1);
+const invOne = new Invoice('Tinubu', "rigging the election", 1);
+const invTwo = new Invoice('Sonwoolu', "Scamming us", 1);
 
 let invoices: Invoice[] = [];
 invoices.push(invOne)
