@@ -84,7 +84,7 @@ form.addEventListener('submit', (e: Event) => {
     list.render(doc, type.value, "start");
 })
 
-//  GGENERICS
+//  GGENERICS and ENUMS 
 
 const addUID = <T extends {name: string}>(obj: T) => {
     const uid = Math.floor(Math.random() * 999);
@@ -95,22 +95,26 @@ const docOne = addUID({name: 'yoshi', age: 40});
 // const docTwo = addUID("Alaye!");
 console.log(docOne);
 
+
+enum ResourceName { hall, topToBottom, }
 interface Resource<T> {
     uid: number,
-    resourceName: string,
+    resourceName: ResourceName,
     data: T
 };
 
 const docTwo: Resource<String> = {
     uid: 419,
-    resourceName: "Tinubu",
+    resourceName: ResourceName.hall,
     data: "A town hall differant from bala blue!"
 }
 
 const doc3: Resource<object> = {
     uid: 3,
-    resourceName: "Buhari",
+    resourceName: ResourceName.topToBottom,
     data: {
         garbage: "nigeria, from to bottom"
     }
 }
+
+console.log(docTwo, doc3);

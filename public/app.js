@@ -65,7 +65,7 @@ form.addEventListener('submit', (e) => {
     const list = new ListTemplate(ul);
     list.render(doc, type.value, "start");
 });
-//  GGENERICS
+//  GGENERICS and ENUMS 
 const addUID = (obj) => {
     const uid = Math.floor(Math.random() * 999);
     return Object.assign(Object.assign({}, obj), { uid });
@@ -73,16 +73,22 @@ const addUID = (obj) => {
 const docOne = addUID({ name: 'yoshi', age: 40 });
 // const docTwo = addUID("Alaye!");
 console.log(docOne);
+var ResourceName;
+(function (ResourceName) {
+    ResourceName[ResourceName["hall"] = 0] = "hall";
+    ResourceName[ResourceName["topToBottom"] = 1] = "topToBottom";
+})(ResourceName || (ResourceName = {}));
 ;
 const docTwo = {
     uid: 419,
-    resourceName: "Tinubu",
+    resourceName: ResourceName.hall,
     data: "A town hall differant from bala blue!"
 };
 const doc3 = {
     uid: 3,
-    resourceName: "Buhari",
+    resourceName: ResourceName.topToBottom,
     data: {
         garbage: "nigeria, from to bottom"
     }
 };
+console.log(docTwo, doc3);
